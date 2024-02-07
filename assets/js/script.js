@@ -25,9 +25,3 @@
     $('.seconds').text(hours + " hours " + minutes + " minutes " + seconds + " seconds");
     setTimeout("updateNumbers()", 1000);
     }
-    </script>
-    <script type="text/javascript">
-        document.ready = function() {
-            $(window).resize();
-            updateNumbers();
-        };
