@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pmai.</title>
+    <link rel="stylesheet" href="http://kan.lu/src/style.css" media="all">
+    <script src="http://kan.lu/src/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+    var maxnumhours = 23;
+    var maxnummins = 59;
+    var maxnumsecs = 60;
+    var maxmilisecs = 999;
+    
+    
+    function updateNumbers() {
+    var start_time = 1620961200;
+    var duration = parseInt(Date.now() / 1000 - start_time);
+    
+    var seconds = duration % 60;
+    if (seconds < 10)
+    seconds = "0" + seconds;
+    duration = parseInt(duration / 60);
+    var minutes = duration % 60;
+    if (minutes < 10)
+    minutes = "0" + minutes;
+    duration = parseInt(duration / 60);
+    var hours = duration % 24;
+    if (hours < 10)
+    hours = "0" + hours;
+    duration = parseInt(duration / 24);
+    var days = duration;
+    $('.days-number').text("" + days);
+    $('.seconds').text(hours + " hours " + minutes + " minutes " + seconds + " seconds");
+    setTimeout("updateNumbers()", 1000);
+    }
+    </script>
+    <script type="text/javascript">
+        document.ready = function() {
+            $(window).resize();
+            updateNumbers();
+        };
+    </script>
+</head>
+<body>
+    <!-- 小红心 -->
+    <script type="text/javascript" src="http://kan.lu/src/clicklove.js"></script>
+    <!-- 爆炸特效 -->
+    <canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+    <script type="text/javascript" src="http://kan.lu/src/anime.min.js"></script>
+    <script type="text/javascript" src="http://kan.lu/src/fireworks.js"></script>
+    <div class="container">
+        <div class="info">
+            <p>Fadhcca</p>
+            <p>How long will I love you?</p>
+            <p>I will always love you.</p>
+            <p>14 May 2021 </p>
+            <p>--------</p>
+        </div>
+        <div class="days">
+            <span class="days-number"></span>
+            <span class="days-label">days</span>
+        </div>
+        <div class="seconds"></div>
+    </div>
+</body>
+</html>
