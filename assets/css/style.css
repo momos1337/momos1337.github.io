@@ -1,0 +1,35 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,button,textarea,blockquote{margin:0;padding:0;}
+fieldset,img{border:0;}
+
+ul,ol{
+    list-style: none;
+}
+
+body {
+    font-family: "Monda","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,Georgia, sans-serif;
+}
+.info {
+    font-size: 26px;
+}
+.info p {
+    line-height: 1.5;
+}
+
+.days {
+    font-size: 26px;
+}
+
+.seconds {
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+.container{
+    text-align:center;
+    padding: 25% 0;
+}
+
+.about:hover{
+  filter:alpha(opacity=100);
+  opacity: 1;
+}
