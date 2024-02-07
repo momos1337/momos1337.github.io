@@ -1,4 +1,4 @@
-    var maxnumhours = 23;
+ var maxnumhours = 23;
     var maxnummins = 59;
     var maxnumsecs = 60;
     var maxmilisecs = 999;
@@ -25,3 +25,9 @@
     $('.seconds').text(hours + " hours " + minutes + " minutes " + seconds + " seconds");
     setTimeout("updateNumbers()", 1000);
     }
+    </script>
+    <script type="text/javascript">
+        document.ready = function() {
+            $(window).resize();
+            updateNumbers();
+        };
