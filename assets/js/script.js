@@ -1,11 +1,11 @@
- var maxnumhours = 23;
+    var maxnumhours = 23;
     var maxnummins = 59;
     var maxnumsecs = 60;
     var maxmilisecs = 999;
     
     
     function updateNumbers() {
-    var start_time = 1620961200;
+    var start_time = 1681493552000;
     var duration = parseInt(Date.now() / 1000 - start_time);
     
     var seconds = duration % 60;
@@ -25,9 +25,3 @@
     $('.seconds').text(hours + " hours " + minutes + " minutes " + seconds + " seconds");
     setTimeout("updateNumbers()", 1000);
     }
-    </script>
-    <script type="text/javascript">
-        document.ready = function() {
-            $(window).resize();
-            updateNumbers();
-        };
