@@ -14,12 +14,6 @@ font-size: 20px;
 #greetings::after {
   content: attr(data-content);
 }
-#greetings::after {
-  content: attr(data-content);
-  padding:10px 15px;
-  background:#eee;
-  border-radius:8px;
-}
 </style>
 <script>
 document.ready = function() {
@@ -37,7 +31,6 @@ function myTimer() {
 </script>
 <div style="height: auto; min-height: 100%;">
 <body bgcolor="white">
-<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
 <p style="font-size:20px; color:black;" id="clock"></p>
 <font color="black">
 <img width="200" src="assets/img/hug.gif">
@@ -56,9 +49,7 @@ function myTimer() {
          <span class="days-label">days</span>
      </div>
      <div class="seconds"></div>
-     
  </div>
- <br>
  i made a playlist for u babeeee, <a target="_blank" href="https://open.spotify.com/playlist/5BBJGwjINhTj0HQrBIw8kM?si=2InshqZiS9uUDKIsuX75cw&utm_source=copy-link">click here :<</a>
 </body>
 </html>
