@@ -5,7 +5,7 @@
     
     
     function updateNumbers() {
-    var start_time = 1681493552000;
+    var start_time = 1620961200;
     var duration = parseInt(Date.now() / 1000 - start_time);
     
     var seconds = duration % 60;
