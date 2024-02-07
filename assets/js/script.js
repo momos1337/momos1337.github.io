@@ -1,4 +1,4 @@
-    var maxnumhours = 23;
+    var maxnumhours = 24;
     var maxnummins = 59;
     var maxnumsecs = 60;
     var maxmilisecs = 999;
