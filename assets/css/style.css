@@ -9,19 +9,19 @@ body {
     font-family: "Monda","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,Georgia, sans-serif;
 }
 .info {
-    font-size: 26px;
+    font-size: 20px;
 }
 .info p {
     line-height: 1.5;
 }
 
 .days {
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .seconds {
     margin-top: 15px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .container{
