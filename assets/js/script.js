@@ -1,11 +1,11 @@
-    var maxnumhours = 24;
+    var maxnumhours = 23;
     var maxnummins = 59;
     var maxnumsecs = 60;
     var maxmilisecs = 999;
     
     
     function updateNumbers() {
-    var start_time = 1681516832;
+    var start_time = 1681491632;
     var duration = parseInt(Date.now() / 1000 - start_time);
     
     var seconds = duration % 60;
